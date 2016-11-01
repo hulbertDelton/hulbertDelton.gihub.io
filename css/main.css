@@ -110,7 +110,7 @@ hr {
 }
 .grid-container div {
   min-width: 30%;
-  width: 30%;
+  width: 90%;
   margin-bottom: 64px;
   box-sizing: border-box;
 }
@@ -166,7 +166,11 @@ footer a {
 
 
 
-
+@media only screen and (min-width: 700px) {
+  .grid-container div {
+    width: 30%;
+  }
+}
 
 
 
