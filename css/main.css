@@ -259,7 +259,6 @@ footer a {
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
   *,
   *:before,
