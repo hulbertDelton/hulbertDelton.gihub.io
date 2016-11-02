@@ -29,19 +29,9 @@
       <hr>
     </header>
     <div id="main" class="project-container">
+      <p>You need javascript to view this page, please enable javascript.</p>
     </div>
-    <footer>
-      <div class="side-link"><a href="#">About Me</a></div>
-      <div class="center-links">
-        <a href="#">hulbert.delton@yahoo.com</a>
-        <span> | </span>
-        <a href="#">@n1nja0fthenight</a>
-        <span> | </span>
-        <a href="#">Facebook</a>
-        <span> | </span>
-        <a href="#">Linkedin</a>
-      </div>
-      <div class="side-link"><a href="#">Resume</a></div>
+    <footer id="footer">
     </footer>
 
     <script src="/js/plugins.js"></script>
@@ -56,8 +46,19 @@
         xhttp.open("GET", "content.html", true);
         xhttp.send();
       }
+      function loadFooter() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+           document.getElementById("footer").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "/footer.html", true);
+        xhttp.send();
+      }
 
       loadDoc();
+      loadFooter();
     </script>
   </body>
 </html>

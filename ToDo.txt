@@ -1,0 +1,3 @@
+-Update stylesheet to make it so that my columns adapt to the size of the screen instead of resizing and staying 3 wide
+
+-

@@ -139,6 +139,18 @@ hr {
   display: block;
   margin: 16px auto;
 }
+.project-wrapper {margin:16px auto; width:90%;}
+.project-info {width:46%;padding-right:2%; float:left;}
+.project-info.facts {border: 3px solid black;}
+
+@media (max-width:47rem) {
+  .project-info{width:100%;}
+  .project-info.facts{border:none;}
+  .mobile-img { width: 100% !important;
+  }
+}
+
+
 footer {
   border-top: 3px solid #000;
   text-align: center;
