@@ -28,7 +28,7 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
+  padding-bottom: 1rem;
 }
 
 /*
@@ -122,6 +122,35 @@ hr {
 .grid-container h2 {
   text-align: center;
 }
+
+.artPagesImgContainer{
+  max-width: 90%;
+  margin: 64px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.artPagesImgContainer img{
+  height: 450px;
+  border: 3px solid #000;
+}
+
+@media(max-width: 37em){
+.artPagesImgContainer img{
+  height:auto;
+  width:100%;
+  }
+  .project-container .artPagesImgContainer img{
+    max-height: none;
+  }
+}
+
+.paraList{
+  max-width: 700px;
+  margin: 16px auto;
+}
+
 .project-container {
   max-width: 90%;
   margin: 64px auto;
