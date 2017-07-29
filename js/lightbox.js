@@ -14,7 +14,7 @@ var imgIndex;
 var imgLength;
 
 window.addEventListener('load', function () {
-  setTimeout(getImages(), 1000);
+  setTimeout( function () { getImages(); }, 1000);
   // getImages();
 });
 
