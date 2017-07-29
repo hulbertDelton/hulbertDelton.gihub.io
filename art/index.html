@@ -29,10 +29,18 @@
       <hr>
     </header>
     <div id="main" class="project-container">
-      <p>You need javascript to view this page, please enable javascript.</p>
+      <noscript>You need javascript to view this page, please enable javascript.</noscript>
     </div>
     <footer id="footer">
     </footer>
+
+    <div id="lightbox" class="lightbox-hidden">
+      <img id="lightbox-img" class="zoomed-out" src="#!">
+      <button id='lightbox-left'>←</button>
+      <button id='lightbox-right'>→</button>
+      <button id='lightbox-close'>╳</button>
+    </div>
+
 
     <script src="/js/plugins.js"></script>
     <script type="text/javascript">
@@ -60,5 +68,6 @@
       loadDoc();
       loadFooter();
     </script>
+    <script src="/js/lightbox.js"></script>
   </body>
 </html>
