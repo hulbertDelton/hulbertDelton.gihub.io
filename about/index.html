@@ -22,15 +22,42 @@
     <header>
       <h1><a href="/">Delton Hulbert</a></h1>
       <nav>
-        <a href="/games">Games</a>
-        <a href="/art">Art</a>
-      <!--  <a href="/writing">Writing</a> -->
+       <div class="dropdownG"><a onclick="toggleDropdownG()" class="droplink">Games</a>
+          <div id="dropdownG" class="dropdown-content">
+            <a href="/games/GameJams">Game Jam Games</a>
+            <hr>
+            <a href="/games/enough">enough.</a>
+            <hr>
+            <a href="/games/bigMo">Big Movement Gaming</a>
+            <hr>
+            <a href="/games/kaiju-movie-club">Happy Birthday, Kai-Junior!</a>
+            <hr>
+            <a href="/games/the-usual-magic">The Usual Magic</a>
+            <hr>
+            <a href="/games/friender-bender">Friender Bender</a>
+            <hr>
+            <a href="/games/eugene-extreme">Eugene Extreme</a>
+            <hr>
+            <a href="/games/quietus">QuietUs</a>
+            <hr>
+            <a href="/games/skoguth">Skoguth</a>
+          </div>
+        </div>
+       <div class="dropdownA"><a onclick="toggleDropdownA()" class="droplink">Art</a>
+          <div id="dropdownA" class="dropdown-content">
+            <a href="/art/3d">3D models</a>
+            <hr>
+            <a href="/art/2d">Paintings</a>
+          </div>
+        </div>
       </nav>
       <hr>
     </header>
     <div id="main" class="project-container">
+      <p>You need javascript to view this page, please enable javascript.</p>
     </div>
-
+    <footer id="footer">
+    </footer>
 
     <script src="/js/plugins.js"></script>
     <script type="text/javascript">
@@ -54,8 +81,17 @@
         xhttp.open("GET", "/footer.html", true);
         xhttp.send();
       }
+      function toggleDropdownG() {
+        document.getElementById("dropdownG").classList.toggle("show");
+
+      }
+
+      function toggleDropdownA() {
+        document.getElementById("dropdownA").classList.toggle("show");
+      }
 
       loadDoc();
+      loadFooter();
     </script>
   </body>
 </html>
