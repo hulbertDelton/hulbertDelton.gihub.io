@@ -118,7 +118,7 @@ hr {
 }
 .grid-container img {
   border: 3px solid #000;
-  width: 100%;
+  width: 40%;
   height: auto;
 }
 .grid-container h2 {
@@ -250,6 +250,14 @@ footer a {
   font-size: 2em;
 }
 
+.gameImage {
+
+}
+.gameImage img {
+  float:left;
+  padding:10px;
+  max-width:25%;
+}
 
 .lightbox-hidden {
   display: none;
